@@ -22,7 +22,7 @@ pipeline{
                 sudo git init 
                 sudo git remote add origin http://github.com/Fearreece/website
                 sudo git pull origin main
-                npm install
+                sudo npm install
                 sudo PORT=3000 pm2 start ./bin/www
 
 
