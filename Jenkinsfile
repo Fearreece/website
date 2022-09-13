@@ -15,7 +15,7 @@ pipeline{
                 sh '''
                 sudo ssh -i /home/ubuntu/server.pem -t -o StrictHostKeyChecking=no ubuntu@ec2-3-89-19-90.compute-1.amazonaws.com
                 cd /var/www
-                rm -rf html
+                sudo rm -rf html
                 sudo mkdir html
                 cd html
                 sudo pm2 kill
