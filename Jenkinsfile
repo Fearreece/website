@@ -12,7 +12,7 @@ pipeline{
         stage('Build Stage'){
             steps{
                 echo "This is the building stage"
-                '''
+                sh '''
                 ssh -i /home/ubuntu/server.pem -t -o StrictHostKeyChecking=no ubuntu@ec2-3-89-19-90.compute-1.amazonaws.com
                 cd /var/www
                 rm -rf html
